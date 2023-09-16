@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello SecurityController!{% endblock %}
+{% block title %}Symrecipe - connexion!{% endblock %}
 
 {% block body %}
 
@@ -11,6 +11,11 @@
             <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
         </div>
     {% endif %}
+    {% for message in app.flashes ('success') %}
+    <div class=" alert alert-success mt-2">
+        {{message}}
+    </div>
+     {% endfor %}
     <form action="{{ path('app_login')}}" method="post">
         <div class="form-group">
             <label for="username" class="form-label mt-4">Adresse mail</label>

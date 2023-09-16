@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Symrecipe - inscription!{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h1 class="mt-4">Formulaire d'inscription</h1>
+
+    {{form(form)}}
+
+    {# {{ form_start(form)}}
+    <div class="form-group">
+        {{ form_label(form.fullname)}}
+        {{ form_widget(form.fullname)}}
+        <div class="form-error">
+            {{ form_errors(form.fullname)}}
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form_label(form.pseudo)}}
+        {{ form_widget(form.pseudo)}}
+        <div class="form-error">
+            {{ form_errors(form.pseudo)}}
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form_label(form.email)}}
+        {{ form_widget(form.email)}}
+        <div class="form-error">
+            {{ form_errors(form.email)}}
+        </div>
+    </div>
+    <div class="form-group">
+        {{ form_label(form.plainPassword)}}
+        {{ form_widget(form.plainPassword)}}
+        <div class="form-error">
+            {{ form_errors(form.plainPassword)}}
+        </div>
+    </div>
+   
+    <div class="form-group">
+        {{ form_row(form.submit)}}
+    </div>
+</div>
+{{ form_end(form)}}  #}
+</div>
+
+{% endblock %}
